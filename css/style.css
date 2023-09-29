@@ -71,7 +71,7 @@ form .text span{
 }
 @media(max-width:350px) {
     form .text span{
-        font-size: 10px;
+        font-size: 8px;
     }
     
 }
