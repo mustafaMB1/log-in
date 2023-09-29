@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../image/ab0bd66fdab07765dec06af148e4deeb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+}
+body::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 5rem 3rem 3rem;
+    background-color: #0803088a;
+    width: 40%;
+    border-radius: 12px;
+    color: white;
+}
+@media(max-width:769px) {
+    form{
+        width: 94%;
+    }
+
+}
+form .icon{
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+}
+form input{
+    padding: 12px;
+    background-color: #9e55a247;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+    width: auto;
+    font-size: 20px;
+    margin-left: 20%;
+    border-radius: 0px 0px 12px;
+}
+form .text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form .text span{
+    display: block;
+    cursor: pointer;
+    font-weight: bold;
+}
+@media(max-width:350px) {
+    form .text span{
+        font-size: 10px;
+    }
+    
+}
+form .icon i{
+    font-size: 3rem;
+    color: #4a0a4d;
+}
+
+
+
+form .pass{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    color: #4a0a4d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 12px 0px 0px;
+}
+form .log{
+    position: absolute;
+    bottom: -3rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: 2rem;
+    width: 50%;
+    color: #4a0a4d;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 22px;
+    font-weight: bold;
+    cursor: pointer;
+} 
+
+@media(max-width:769px) {
+    form .log p{
+        font-size: 16px;
+    }
+}
